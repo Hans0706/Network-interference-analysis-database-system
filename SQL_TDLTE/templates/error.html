@@ -1,0 +1,32 @@
+{%load static%}
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>404 - 对不起，您查找的页面不存在！</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/error.css' %}">
+</head>
+
+<body>
+<div id="wrapper"><a class="logo" href="/"></a>
+  <div id="main">
+    <header id="header">
+      <h1><span class="icon">!</span>404<span class="sub">page not found</span></h1>
+    </header>
+    <div id="content">
+      <h2>啊哦...好像出错了...</h2>
+      <p>当您看到这个页面,表示什么东西出错了,请确认您的输入是正确的,如果没有得到解决,请联系站长纪呼啸(15910529296)进行处理,本站站长纪呼啸感谢您的支持!</p>
+      <div class="utilities">
+        <form  name="formsearch" action="/plus/search.php" id="formkeyword"></form>
+        <a class="button right" href="#" onClick="history.go(-1);return true;">返回...</a><a class="button right" href="http://wpa.qq.com/msgrd?v=3&uin=150272354&site=qq&menu=yes">联系站长</a>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div id="footer">
+      <ul>
+        <li><a href="/">网站首页</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</html>

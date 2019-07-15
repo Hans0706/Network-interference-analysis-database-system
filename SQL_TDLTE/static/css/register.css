@@ -1,0 +1,21 @@
+.border{
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-width: 1px;
+}
+
+#bgcolor{
+    background-image: url(../image/rigist.jpg);
+    background-size:1920px 1080px;
+}
+
+.registTitle{
+    color:yellow;
+}
+
+.registContent{
+    color:black;
+}

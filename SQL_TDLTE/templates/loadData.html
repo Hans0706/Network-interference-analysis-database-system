@@ -1,0 +1,55 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Library Member Login Form A Flat Responsive Widget Template :: W3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="{% static 'js/loadData.js' %}"></script>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="{% static 'css/loadData.css' %}" type="text/css" media="all">
+</head>
+<!-- Body -->
+<body>
+	<h1 align="center"><font color="white">数据导入</font></h1>
+	<div class="container w3layouts agileits">
+		<div class="login w3layouts agileits">
+			<form name="file_name" enctype="multipart/form-data" action="http://127.0.0.1:8000/index/loadData/" method="post">
+                <font color="white" align="right">文件路径：</font>
+                <td align="left"><input id="change" name="file_name" type="file" accept=".xls,.xlsx"/></td>
+                <div>
+                    <font color="white">选择文件格式：</font>
+                     <select name="file_type" id="type" onChange="changeType()">
+                        <option value=".xls,.xlsx">.xls</option>
+                        <option value=".csv">.csv</option>
+                    </select>
+                     <font color="white">选择文件</font>
+                     <select id="table" name="table">
+                        <option value="Cell">Cell</option>
+                        <option value="KPI">KPI</option>
+                        <option value="PRB">PRB</option>
+                        <option value="MROData">MROData</option>
+                    </select>
+                    <div>
+                     <font color="white">分组大小</font>
+                     <input type="text" name="partition" required="">
+                    </div>
+                </div>
+                <div class="send-button w3layouts agileits">
+					<input type="submit" value="导入" onclick="submit_query()">
+				</div>
+			</form>
+        <div id="prog_out" >
+            <div id="prog_in" role="progressbar">
+        </div>
+		</div>
+        <div class="footer w3layouts agileits"></div>
+    </div>
+
+</body>
+<!-- //Body -->
+
+</html>

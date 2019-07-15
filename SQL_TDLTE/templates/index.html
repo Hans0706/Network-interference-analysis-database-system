@@ -1,0 +1,64 @@
+{%load static%}
+{% csrf_token %}
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+	<title>Library Member Login Form A Flat Responsive Widget Template :: W3layouts</title>
+
+	<!-- Meta-Tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="Library Member Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //Meta-Tags -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+	<script type="text/javascript" src="{% static 'js/regist.js' %}"></script>
+    <META    HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+    <META    HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+
+    <META    HTTP-EQUIV="Expires" CONTENT="0">
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+	<h1>Database login & regist system</h1>
+	<div class="container w3layouts agileits">
+		<div class="login w3layouts agileits">
+			<h2>Sign In</h2>
+			<form name="form1" action="login/" method="post">
+				<input type="text" name="username" placeholder="username" required="">
+				<input type="password" name="password" placeholder="password" required="">
+				<div class="send-button w3layouts agileits">
+					<input type="submit" value="Sign In">
+				</div>
+			</form>
+			<div class="social-icons w3layouts agileits">
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="register w3layouts agileits">
+			<h2>Sign Up</h2>
+			<form name="form2" action="regist/" method="post" onsubmit="return beforeSubmit(this)">
+				<input type="text" name="username" placeholder="username" required="">
+				<input type="password" name="password" placeholder="Password" required="">
+				<input type="password" name="password1" placeholder="Password again" required="">
+				<div class="send-button w3layouts agileits">
+					<input type="submit" value="Sign Up">
+				</div>
+			</form>
+		</div>
+	<div class="footer w3layouts agileits">
+		<p> &copy; 2019 Database Login Form. All Rights Reserved | Design by Weiser</p>
+	</div>
+</div>
+</body>
+<!-- //Body -->
+
+</html>

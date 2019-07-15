@@ -1,0 +1,91 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Library Member Login Form A Flat Responsive Widget Template :: W3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Library Member Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" href="{% static 'css/button.css' %}" type="text/css" media="all">
+	<link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready( function() 
+        {
+             $('#example').DataTable( {
+            dom: 'Bfrtip',
+                buttons: [ {
+                extend: 'excelHtml5',
+                customize: function( xlsx ) 
+                {
+                    var sheet = xlsx.xl.worksheets['sheet1.xml'];
+                    $('row c[r^="C"]', sheet).attr( 's', '2' );
+                }
+                } ],
+    } );
+    $('#example').DataTable().fnClearTable();
+    $('#example').DataTable().fnDestroy();
+} );
+    </script>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />  
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css"/> 
+    <script src="http://cdn.gbtags.com/datatables/1.10.5/js/jquery.js"></script> 
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>  
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>   
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js "></script> 
+    <script src="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+</head>
+
+
+<!-- Body -->
+<body>
+	<h1 align="center"><font color="white">PRB统计信息查询</font></h1>
+	<div class="container w3layouts agileits">
+			<form action="http://127.0.0.1:8000/index/search4_1/" method="post">
+                <div align="center" class="send-button w3layouts agileits">
+                    <input type="text" name="route" placeholder="请输入导出路径" required="">
+					<input  type="submit" value="生成新表tbPRBnew并下载">
+				</div>
+			</form>
+	</div>
+	
+        <style>
+            .col_class
+            {
+                color:white;
+                text-align: center;
+            }
+        </style>
+
+{#    <table id="example" class="display" style="width:100%">#}
+{#	<thead class="col_class">#}
+{#		<tr>#}
+{#			<th>CITY</th>#}
+{#			<th>SECTOR_ID</th>#}
+{#			<th>SECTOR_NAME</th>#}
+{#			<th>ENODEBID</th>#}
+{#		</tr>#}
+{#	</thead>#}
+{#	<tbody>#}
+{##}
+{#	</tbody>#}
+{#</table>#}
+
+			<form action="http://127.0.0.1:8000/index/jump4_2/" method="post">
+                <div align="center" class="send-button w3layouts agileits">
+					<input  type="submit" value="根据新表查询">
+				</div>
+			</form>
+
+</body>
+<!-- //Body -->
+
+</html>

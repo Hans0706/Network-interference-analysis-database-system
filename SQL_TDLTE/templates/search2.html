@@ -1,0 +1,194 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Library Member Login Form A Flat Responsive Widget Template :: W3layouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="Library Member Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+		<link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+		<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready( function()
+			{
+				 $('#example').DataTable( {
+				dom: 'Bfrtip',
+					buttons: [ {
+					extend: 'excelHtml5',
+					customize: function( xlsx ) {
+					var sheet = xlsx.xl.worksheets['sheet1.xml'];
+					$('row c[r^="C"]', sheet).attr( 's', '2' );
+				}
+			} ]
+		} );
+	} );
+		</script>
+
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />
+		<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css"/>
+		<script src="http://cdn.gbtags.com/datatables/1.10.5/js/jquery.js"></script>
+		<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
+		<script src="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+</head>
+
+
+<!-- Body -->
+<body>
+	<h1 align="center"><font color="white">基站查询</font></h1>
+	<div class="container ">
+		<div class="login">
+			<form action="http://127.0.0.1:8000/index/search2/" method="post">
+
+
+
+                   <div style="position:relative;">
+                        <select style="width:300px;line-height: 30px;height: 30px" onchange="document.getElementById('input').value=this.value">
+<option value="124672">	124672	</option>
+<option value="124673">	124673	</option>
+<option value="124674">	124674	</option>
+<option value="124675">	124675	</option>
+<option value="124676">	124676	</option>
+<option value="124677">	124677	</option>
+<option value="124678">	124678	</option>
+<option value="124679">	124679	</option>
+<option value="124680">	124680	</option>
+<option value="124681">	124681	</option>
+<option value="124682">	124682	</option>
+<option value="124683">	124683	</option>
+<option value="124684">	124684	</option>
+<option value="124685">	124685	</option>
+<option value="124686">	124686	</option>
+<option value="124687">	124687	</option>
+<option value="124688">	124688	</option>
+<option value="124689">	124689	</option>
+<option value="124690">	124690	</option>
+<option value="124691">	124691	</option>
+<option value="124692">	124692	</option>
+<option value="124693">	124693	</option>
+<option value="124694">	124694	</option>
+<option value="124695">	124695	</option>
+<option value="124696">	124696	</option>
+<option value="124697">	124697	</option>
+<option value="124698">	124698	</option>
+<option value="124699">	124699	</option>
+<option value="124700">	124700	</option>
+<option value="124701">	124701	</option>
+<option value="124702">	124702	</option>
+<option value="124703">	124703	</option>
+<option value="124704">	124704	</option>
+                            <option value="三门峡渑池东坡头-HLHF">三门峡渑池东坡头-HLHF</option>
+<option value="三门峡渑池姜王庄-HLHF">三门峡渑池姜王庄-HLHF</option>
+<option value="三门峡渑池寺庄-HLHF">三门峡渑池寺庄-HLHF</option>
+<option value="三门峡渑池杨河村-HLHF">三门峡渑池杨河村-HLHF</option>
+<option value="三门峡渑池刘果-HLHF">三门峡渑池刘果-HLHF</option>
+<option value="三门峡渑池张沟村-HLHF">三门峡渑池张沟村-HLHF</option>
+<option value="三门峡渑池苏门-HLHF">三门峡渑池苏门-HLHF</option>
+<option value="三门峡渑池南涧-HLHF">三门峡渑池南涧-HLHF</option>
+<option value="三门峡渑池峪洞-HLHF">三门峡渑池峪洞-HLHF</option>
+<option value="三门峡渑池高岭-HLHF">三门峡渑池高岭-HLHF</option>
+<option value="三门峡渑池崤店-HLHF">三门峡渑池崤店-HLHF</option>
+<option value="三门峡渑池气象局-HLHF">三门峡渑池气象局-HLHF</option>
+<option value="三门峡北梁-HLHF">三门峡北梁-HLHF</option>
+<option value="三门峡卢氏清河-HLHF">三门峡卢氏清河-HLHF</option>
+<option value="三门峡陕县元上-HLHF">三门峡陕县元上-HLHF</option>
+<option value="三门峡陕县观音堂张村-HLHF">三门峡陕县观音堂张村-HLHF</option>
+<option value="三门峡陕县高阳山温泉度假村-HLHF">三门峡陕县高阳山温泉度假村-HLHF</option>
+<option value="三门峡灵宝吴家垣-HLHF">三门峡灵宝吴家垣-HLHF</option>
+<option value="三门峡灵宝西水头-HLHF">三门峡灵宝西水头-HLHF</option>
+<option value="三门峡灵宝马谢-HLHF">三门峡灵宝马谢-HLHF</option>
+<option value="三门峡灵宝吉家湾-HLHF">三门峡灵宝吉家湾-HLHF</option>
+<option value="三门峡灵宝官庄原-HLHF">三门峡灵宝官庄原-HLHF</option>
+<option value="三门峡灵宝纪家庄-HLHF">三门峡灵宝纪家庄-HLHF</option>
+<option value="三门峡灵宝庙底-HLHF">三门峡灵宝庙底-HLHF</option>
+<option value="三门峡灵宝变电所-HLHF">三门峡灵宝变电所-HLHF</option>
+<option value="三门峡灵宝大闫-HLHF">三门峡灵宝大闫-HLHF</option>
+<option value="三门峡灵宝阎村芦笋厂-HLHF">三门峡灵宝阎村芦笋厂-HLHF</option>
+<option value="三门峡灵宝周家源-HLHF">三门峡灵宝周家源-HLHF</option>
+<option value="三门峡灵宝肖泉-HLHF">三门峡灵宝肖泉-HLHF</option>
+<option value="三门峡灵宝肖泉-HLHF">三门峡灵宝肖泉-HLHF</option>
+<option value="三门峡灵宝赵村-HLHF">三门峡灵宝赵村-HLHF</option>
+<option value="三门峡灵宝洼里-HLHF">三门峡灵宝洼里-HLHF</option>
+<option value="三门峡灵宝南观头-HLHF">三门峡灵宝南观头-HLHF</option>
+                        </select>
+                        <input id="input" name="attribute" style="position:absolute;width:280px;height:26px;left:1px;top:1px;border:0px;" required="">
+                    </div>
+
+
+                <div class="send-button w3layouts agileits">
+                    <input  type="submit" value="给我搜!">
+                </div>
+            </form>
+		</div>
+    </div>
+
+<style>
+		.col_class
+		{
+			color:white;
+		}
+	</style>
+
+<table id="example" class="display" style="width:100%">
+	<thead class="col_class">
+		<tr>
+			<th>CITY</th>
+			<th>SECTOR_ID</th>
+			<th>SECTOR_NAME</th>
+			<th>ENODEBID</th>
+			<th>ENODEB_NAME</th>
+			<th>EARFCN</th>
+            <th>PCI</th>
+			<th>PSS</th>
+			<th>SSS</th>
+			<th>TAC</th>
+			<th>VENDOR</th>
+			<th>LONGITUDE</th>
+            <th>LATITUDE</th>
+            <th>STYLE</th>
+			<th>AZIMUTH</th>
+			<th>HEIGHT</th>
+			<th>ELECTTILT</th>
+			<th>MECHTILT</th>
+			<th>TOTLETILT</th>
+		</tr>
+	</thead>
+	<tbody>
+        {% for item in info %}
+		<tr>
+            <td>{{ item.CITY }}</td>
+            <td>{{ item.SECTOR_ID }}</td>
+            <td>{{ item.SECTOR_NAME }}</td>
+            <td>{{ item.ENODEB_ID }}</td>
+            <td>{{ item.ENODEB_NAME }}</td>
+            <td>{{ item.EARFCN }}</td>
+            <td>{{ item.PCI }}</td>
+            <td>{{ item.PSS }}</td>
+            <td>{{ item.SSS }}</td>
+            <td>{{ item.TAC }}</td>
+            <td>{{ item.VENDOR }}</td>
+            <td>{{ item.LONGITUDE }}</td>
+            <td>{{ item.LATITUDE }}</td>
+            <td>{{ item.STYLE }}</td>
+            <td>{{ item.AZIMUTH }}</td>
+            <td>{{ item.HEIGHT }}</td>
+            <td>{{ item.ELECTTILT }}</td>
+            <td>{{ item.MECHTILT }}</td>
+            <td>{{ item.TOTLETILT }}</td>
+		</tr>
+        {% endfor %}
+	</tbody>
+</table>
+
+
+</body>
+<!-- //Body -->
+
+</html>

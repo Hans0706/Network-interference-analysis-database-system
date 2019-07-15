@@ -1,0 +1,129 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Library Member Login Form A Flat Responsive Widget Template :: W3layouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+</head>
+<!-- Body -->
+<body>
+	<h1 align="center"><font color="white">KPI指标信息查询</font></h1>
+
+	<div class="container w3layouts agileits">
+		<div class="login w3layouts agileits">
+			<form action="#" method="post">
+				<input type="text" name="userame" placeholder="网元名称" required="">
+                <input type="text" name="userame" placeholder="网元属性" required="">
+                <input type="datetime" name="starttime" required="">
+                <input type="datetime-local" name="endtime" required="">
+                <div class="send-button w3layouts agileits">
+					<input type="submit" value="给我画">
+				</div>
+			</form>
+		</div>
+        <div class="footer w3layouts agileits"></div>
+    </div>
+
+
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="height:400px"></div>
+<!-- ECharts单文件引入 -->
+<script src="{% static 'js/echarts.js' %}"></script>
+<script type="text/javascript">
+	// 路径配置
+	require.config({
+		paths: {
+			echarts: 'http://echarts.baidu.com/build/dist'
+		}
+	});
+	// 使用
+	require(
+		[
+			'echarts',
+			'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
+		],
+		function (ec) 
+		{
+			// 基于准备好的dom，初始化echarts图表
+			var myChart = ec.init(document.getElementById('main')); 
+			var option = {
+				tooltip: {
+					show: true
+				},
+				legend: {
+					data:['销量']
+				},
+				xAxis : 
+				[
+					{
+						type : 'category',
+						data : ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子","衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"],
+						axisLabel: {
+								   show: true,
+								   textStyle: {
+											   color: 'white'
+											   }
+								   }
+				   }	 
+				],
+
+				yAxis : 
+				[
+					{
+						type : 'value',
+						axisLabel: {
+								   show: true,
+								   textStyle: {
+											   color: 'white'
+											   }
+								   }
+					}
+				],
+				series : [
+					{
+						name:"销量",
+						type:"bar",
+						data:[5, 20, 100, 10, 10, 20]
+					}
+				],
+			   toolbox: 
+			   { //可视化的工具箱
+				   show: true,
+				   feature: 
+				   {
+					   dataView: 
+					   { //数据视图
+						   show: true
+					   },
+					   restore: 
+					   { //重置
+						   show: true
+					   },
+					   dataZoom: { //数据缩放视图
+						   show: true
+					   },
+					   saveAsImage: {//保存图片
+						   show: true
+					   },
+					   magicType: {//动态类型切换
+						   type: ['bar', 'line']
+					   }
+				   }
+			   },
+			};
+			
+			// 为echarts对象加载数据 
+			myChart.setOption(option); 
+		}
+	);
+</script>
+
+
+</body>
+<!-- //Body -->
+
+</html>

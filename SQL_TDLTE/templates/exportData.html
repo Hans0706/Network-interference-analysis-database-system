@@ -1,0 +1,34 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Library Member Login Form A Flat Responsive Widget Template :: W3layouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+</head>
+<!-- Body -->
+<body>
+	<h1 align="center"><font color="white">数据导出</font></h1>
+	<div class="container w3layouts agileits">
+		<div class="login w3layouts agileits">
+			<form action="http://127.0.0.1:8000/index/exportData/" method="post">
+				<font color="white"><input type="radio" name="table" value="tbCell">tbCell</font>
+                <font color="white"><input type="radio" name="table" value="KPI">KPI</font>
+                <font color="white"><input type="radio" name="table" value="PRB">PRB</font>
+                <font color="white"><input type="radio" name="table" value="tbMRO">MROdata</font>
+                <div class="send-button w3layouts agileits">
+                    <input type="text" name="route" placeholder="请输入下载路径" required="">
+					<input type="submit" value="导出">
+				</div>
+			</form>
+		</div>
+        <div class="footer w3layouts agileits"></div>
+    </div>
+
+</body>
+<!-- //Body -->
+
+</html>
