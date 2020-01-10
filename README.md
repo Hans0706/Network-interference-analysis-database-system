@@ -1,2 +1,7 @@
 # Network-interference-analysis-database-system
 北邮数据库小学期--TD-LTE 网络干扰分析系统 B/S架构
+BUPT Database project -- TD-LTE Network-interference-analysis-database-system
+
+## Project Description
+In the TD-LTE network, the mobile terminal UE and the base station eNodeB transmit uplink and downlink wireless signals through a wireless link to achieve mutual communication between "mobile users-base stations-core network elements-mobile users". The entire coverage area of ​​a TD-LTE network consists of a series of cells / sectors. In each cell / sector, a base station eNodeB located at the center of the cell / sector provides wireless communication services for mobile users UEs in the cell / sector. Geographically adjacent cells Cell or sector sectors will have overlapping coverage areas, and these adjacent cells have adjacent cell relationships. During a call, neighboring cells may interfere with the main cell, which will affect the call quality. The difference between the signal strengths of the main and neighboring cells can indicate the interference strength of the neighboring cell to the main cell. Through analysis of the interference, potential interference sources can be found, and corresponding measures can be taken.
+This course design is based on the special research on the interference problem under the above environment. Through the statistics of the existing information, the database application system-TD-LTE network interference analysis system is developed. The program is developed to analyze and process massive data and perform the results Show.
